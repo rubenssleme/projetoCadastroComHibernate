@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>br.com.bg</groupId>
+    <artifactId>comHibernate</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+    <url>http://maven.apache.org</url>
+   
+    <!-- Codificação dos caracteres e versões de dependencias--> 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <postgres.version>9.1-901.jdbc4</postgres.version>
+        <jtds.version>1.3.1</jtds.version>
+        <mysql.version>5.1.39</mysql.version>  
+        <junit.version>4.12</junit.version>  
+        <surefire.version>2.10</surefire.version>
+        <hibernate.version>4.3.10.Final</hibernate.version>
+        <log4j.version>1.2.14</log4j.version>  
+    </properties>
+
+    <!-- Parâmetros de execução e empacotamento -->
+    <build>
+        <!-- Nome final do projeto empacotado -->
+        <finalName>gerenciadorFinanceiro</finalName>
+      
+        <!-- Plugins -->
+        <plugins>
+            <!-- Compilador -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!--Dependencias  da Aplicação -->    
+    <dependencies>
+        <!-- Hibernate Core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <!-- Banco de Dados MySQl e Outras --> 
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgres.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.jtds</groupId>
+            <artifactId>jtds</artifactId>
+            <version>${jtds.version}</version>
+        </dependency>
+        <!-- JUnit 4.12  e Testng-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+        </dependency>    
+       
+        <!-- SureFire 2.10  e Log4j -->  
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>${surefire.version}</version>
+        </dependency> 
+        
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>4.3.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>unknown.binary</groupId>
+            <artifactId>derbyclient</artifactId>
+            <version>SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>unknown.binary</groupId>
+            <artifactId>derby</artifactId>
+            <version>SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    <!-- Nome e Descrição do projeto-->  
+    <name>Sistema com Hibernate</name>
+    <description>Projeto educacional usado na etec professor basilides de godoy, hospdado no github.com
+rubenssleme
+</description>
+    <repositories>
+        <repository>
+            <id>unknown-jars-temp-repo</id>
+            <name>A temporary repository created by NetBeans for libraries and jars it could not identify. Please replace the dependencies in this repository with correct ones and delete this repository.</name>
+            <url>file:${project.basedir}/lib</url>
+        </repository>
+    </repositories>
+</project>
