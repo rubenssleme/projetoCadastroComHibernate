@@ -21,9 +21,9 @@ public class RepositorioClienteTest {
     public void testSalvar() {
         Cliente cliente = new Cliente();
         cliente.setId(Long.MIN_VALUE);
-        cliente.setNome("Rubens Leme");
+        cliente.setNome("Guilherme Travesso");
         cliente.setCPF("14611111892");
-        cliente.setRG("25420888888");
+        cliente.setRG("25420888558");
         cliente.setSexo("M");
         cliente.seteMail("Rubens@");
         RepositorioCliente repositorioCliente = new RepositorioCliente();

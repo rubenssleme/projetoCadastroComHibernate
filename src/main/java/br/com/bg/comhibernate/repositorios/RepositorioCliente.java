@@ -9,7 +9,7 @@ import br.com.bg.comhibernate.dominio.Cliente;
 
 /**
  *
- * @author laramara
+ * @author Rubens Leme
  */
 public class RepositorioCliente extends RepositorioGenerico<Cliente>{
     
