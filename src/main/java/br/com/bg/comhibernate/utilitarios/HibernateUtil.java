@@ -1,5 +1,6 @@
 package br.com.bg.comhibernate.utilitarios;
 
+import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -30,7 +31,7 @@ public class HibernateUtil {
 
             return fabrica;
 
-        } catch (Throwable ex) {
+        } catch (HibernateException ex) {
             System.err.println("A fabrica não foi criada" + ex);
             throw new ExceptionInInitializerError(ex);
         }

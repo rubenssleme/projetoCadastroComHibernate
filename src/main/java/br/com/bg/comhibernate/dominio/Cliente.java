@@ -3,11 +3,10 @@ package br.com.bg.comhibernate.dominio;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
+
 /**
+ *
  * @author rubens.leme
- * @e-Mail rubenss.leme@gmail.com
- * @github.com/rubenssleme
- * 
  */
 @SuppressWarnings("serial")
 @Entity
