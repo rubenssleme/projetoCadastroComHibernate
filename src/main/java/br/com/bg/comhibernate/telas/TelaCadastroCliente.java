@@ -18,6 +18,7 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
      */
     public TelaCadastroCliente() {
         initComponents();
+        
     }
 
     /**
@@ -76,6 +77,11 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
 
         jbuCancelar.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
         jbuCancelar.setText("Cancelar");
+        jbuCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbuCancelarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -187,9 +193,13 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbuSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbuSalvarActionPerformed
-       controladorTelaCadastroCliente = new ControladorTelaCadastroCliente(jtfNome, jtfCPF, jtfRG, jtfSexo, jtfEmail);
-       controladorTelaCadastroCliente.salvarCliente();
+      controladorTelaCadastroCliente = new ControladorTelaCadastroCliente(jtfNome, jtfCPF, jtfRG, jtfSexo, jtfEmail);
+      controladorTelaCadastroCliente.salvarCliente();
     }//GEN-LAST:event_jbuSalvarActionPerformed
+
+    private void jbuCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbuCancelarActionPerformed
+        System.exit(EXIT_ON_CLOSE);
+    }//GEN-LAST:event_jbuCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -243,5 +253,5 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
     private javax.swing.JTextField jtfRG;
     private javax.swing.JTextField jtfSexo;
     // End of variables declaration//GEN-END:variables
-    private ControladorTelaCadastroCliente controladorTelaCadastroCliente;
+   private ControladorTelaCadastroCliente controladorTelaCadastroCliente;
 }
