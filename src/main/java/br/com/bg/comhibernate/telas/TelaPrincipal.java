@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.bg.comhibernate.telas;
 
 /**
  *
- * @author laramara
+ * @author Rubens Leme
  */
 public class TelaPrincipal extends javax.swing.JFrame {
 

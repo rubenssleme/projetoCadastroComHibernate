@@ -90,6 +90,6 @@
         
     </dependencies>
     <!-- Nome e Descrição do projeto-->  
-    <name>Sistema com Hibernate</name>
+    <name>gerenciador financeiro com hibernate</name>
     <description>Projeto educacional usado na etec professor basilides de godoy.</description>
 </project>
