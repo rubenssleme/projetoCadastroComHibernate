@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.swing.JDesktopPane;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.Timer;
 
@@ -12,14 +14,15 @@ import javax.swing.Timer;
  *
  * @author Rubens Leme
  */
-public class ControladorTelaMenu {
+public class ControladorTelaMenu extends ControladorTela{
 
     private JLabel jlaHora;
     private JLabel jlaData;
     private JLabel jlaDiaSemana;
     private Timer timer;
 
-    public ControladorTelaMenu(JLabel jlaHora,JLabel jlaData, JLabel jlaDiaSemana) {
+    public ControladorTelaMenu(JFrame telaMenu,JDesktopPane desktop,JLabel jlaHora,JLabel jlaData, JLabel jlaDiaSemana) {
+        super(telaMenu, desktop);
         this.jlaHora = jlaHora;
         this.jlaData = jlaData;
         this.jlaDiaSemana = jlaDiaSemana;

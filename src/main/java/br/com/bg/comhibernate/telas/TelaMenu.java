@@ -13,7 +13,7 @@ public class TelaMenu extends javax.swing.JFrame {
      */
     public TelaMenu() {
         initComponents();
-        controlador = new ControladorTelaMenu(jlaHora, jlaData, jlaDiaSemana);
+        controlador = new ControladorTelaMenu(this, jdpTelaFilha,jlaHora, jlaData, jlaDiaSemana);
         setExtendedState(MAXIMIZED_BOTH);
     }
 
@@ -33,6 +33,7 @@ public class TelaMenu extends javax.swing.JFrame {
         jdpTelaFilha = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
+        jmiCadastroCliente = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -153,6 +154,15 @@ public class TelaMenu extends javax.swing.JFrame {
         );
 
         jMenu1.setText("Cadastro");
+
+        jmiCadastroCliente.setText("Cadastro Cliente");
+        jmiCadastroCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmiCadastroClienteActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jmiCadastroCliente);
+
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Consulta");
@@ -182,6 +192,10 @@ public class TelaMenu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jmiCadastroClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiCadastroClienteActionPerformed
+        controlador.exibirTelaCadastroCliente();
+    }//GEN-LAST:event_jmiCadastroClienteActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
@@ -193,6 +207,7 @@ public class TelaMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jlaDiaSemana;
     private javax.swing.JLabel jlaHora;
     private javax.swing.JLabel jlaUsuarioLogado;
+    private javax.swing.JMenuItem jmiCadastroCliente;
     private javax.swing.JPanel jpaBarraInformacao;
     private javax.swing.JPanel jpaInfoDataHora;
     private javax.swing.JPanel jpaLogoEmpresa;
