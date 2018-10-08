@@ -1,7 +1,6 @@
 package br.com.bg.comhibernate.controladores;
 
-import br.com.bg.comhibernate.telas.TelaPrincipal;
-
+import br.com.bg.comhibernate.telas.TelaMenu;
 
 /**
  *
@@ -9,8 +8,8 @@ import br.com.bg.comhibernate.telas.TelaPrincipal;
  */
 public class Principal {
     public static void main(String[] args) {
-        TelaPrincipal telaPrincipal = new TelaPrincipal();
-        telaPrincipal.setVisible(true);
+        TelaMenu telaMenu = new TelaMenu();
+        telaMenu.setVisible(true);
     }
    
 }
