@@ -1,15 +1,15 @@
 package br.com.bg.comhibernate.controladores;
 
-import br.com.bg.comhibernate.telas.TelaCadastroCliente;
+import br.com.bg.comhibernate.telas.TelaMenu;
 
 /**
  *
- * @author laramara
+ * @author Rubens Leme
  */
 public class Principal {
-    
-    private static void main(String [] args){
-        TelaCadastroCliente telaCadastroCliente = new TelaCadastroCliente();
-        telaCadastroCliente.setVisible(true);
+    public static void main(String[] args) {
+        TelaMenu telaMenu = new TelaMenu();
+        telaMenu.setVisible(true);
     }
+   
 }

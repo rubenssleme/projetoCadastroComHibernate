@@ -5,8 +5,6 @@
  */
 package br.com.bg.comhibernate.telas;
 
-import br.com.bg.comhibernate.controladores.ControladorTelaCadastroCliente;
-
 /**
  *
  * @author laramara
@@ -18,7 +16,6 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
      */
     public TelaCadastroCliente() {
         initComponents();
-        
     }
 
     /**
@@ -30,176 +27,108 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jlaNome = new javax.swing.JLabel();
-        jlaCPF = new javax.swing.JLabel();
-        jtfNome = new javax.swing.JTextField();
-        jtfCPF = new javax.swing.JTextField();
-        jlaRG = new javax.swing.JLabel();
-        jtfRG = new javax.swing.JTextField();
-        jlaSexo = new javax.swing.JLabel();
-        jtfSexo = new javax.swing.JTextField();
-        jlaEmail = new javax.swing.JLabel();
-        jtfEmail = new javax.swing.JTextField();
-        jbuSalvar = new javax.swing.JButton();
-        jbuCancelar = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
+        desktopPane = new javax.swing.JDesktopPane();
+        menuBar = new javax.swing.JMenuBar();
+        fileMenu = new javax.swing.JMenu();
+        openMenuItem = new javax.swing.JMenuItem();
+        saveMenuItem = new javax.swing.JMenuItem();
+        saveAsMenuItem = new javax.swing.JMenuItem();
+        exitMenuItem = new javax.swing.JMenuItem();
+        editMenu = new javax.swing.JMenu();
+        cutMenuItem = new javax.swing.JMenuItem();
+        copyMenuItem = new javax.swing.JMenuItem();
+        pasteMenuItem = new javax.swing.JMenuItem();
+        deleteMenuItem = new javax.swing.JMenuItem();
+        helpMenu = new javax.swing.JMenu();
+        contentMenuItem = new javax.swing.JMenuItem();
+        aboutMenuItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Dados Cliente:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Verdana", 1, 13), new java.awt.Color(255, 255, 255))); // NOI18N
-        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
+        fileMenu.setMnemonic('f');
+        fileMenu.setText("File");
 
-        jlaNome.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
-        jlaNome.setText("Nome:");
+        openMenuItem.setMnemonic('o');
+        openMenuItem.setText("Open");
+        fileMenu.add(openMenuItem);
 
-        jlaCPF.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
-        jlaCPF.setText("CPF:");
+        saveMenuItem.setMnemonic('s');
+        saveMenuItem.setText("Save");
+        fileMenu.add(saveMenuItem);
 
-        jlaRG.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
-        jlaRG.setText("RG:");
+        saveAsMenuItem.setMnemonic('a');
+        saveAsMenuItem.setText("Save As ...");
+        saveAsMenuItem.setDisplayedMnemonicIndex(5);
+        fileMenu.add(saveAsMenuItem);
 
-        jlaSexo.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
-        jlaSexo.setText("Sexo:");
-
-        jlaEmail.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
-        jlaEmail.setText("e-Mail:");
-
-        jbuSalvar.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
-        jbuSalvar.setText("Salvar");
-        jbuSalvar.addActionListener(new java.awt.event.ActionListener() {
+        exitMenuItem.setMnemonic('x');
+        exitMenuItem.setText("Exit");
+        exitMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbuSalvarActionPerformed(evt);
+                exitMenuItemActionPerformed(evt);
             }
         });
+        fileMenu.add(exitMenuItem);
 
-        jbuCancelar.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
-        jbuCancelar.setText("Cancelar");
-        jbuCancelar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbuCancelarActionPerformed(evt);
-            }
-        });
+        menuBar.add(fileMenu);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(55, 55, 55)
-                        .addComponent(jbuSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(88, 88, 88)
-                        .addComponent(jbuCancelar))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jlaNome)
-                            .addComponent(jlaCPF)
-                            .addComponent(jlaRG)
-                            .addComponent(jlaSexo)
-                            .addComponent(jlaEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jtfSexo)
-                                        .addComponent(jtfRG)
-                                        .addComponent(jtfCPF))
-                                    .addComponent(jtfEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(44, 44, 44))
-                            .addComponent(jtfNome, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(41, 41, 41))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jlaNome)
-                    .addComponent(jtfNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jlaCPF)
-                    .addComponent(jtfCPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jlaRG)
-                    .addComponent(jtfRG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jlaSexo)
-                    .addComponent(jtfSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jlaEmail)
-                    .addComponent(jtfEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jbuSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jbuCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(19, Short.MAX_VALUE))
-        );
+        editMenu.setMnemonic('e');
+        editMenu.setText("Edit");
 
-        jPanel2.setBackground(new java.awt.Color(0, 0, 102));
+        cutMenuItem.setMnemonic('t');
+        cutMenuItem.setText("Cut");
+        editMenu.add(cutMenuItem);
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 34, Short.MAX_VALUE)
-        );
+        copyMenuItem.setMnemonic('y');
+        copyMenuItem.setText("Copy");
+        editMenu.add(copyMenuItem);
 
-        jPanel3.setBackground(new java.awt.Color(0, 0, 102));
+        pasteMenuItem.setMnemonic('p');
+        pasteMenuItem.setText("Paste");
+        editMenu.add(pasteMenuItem);
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 31, Short.MAX_VALUE)
-        );
+        deleteMenuItem.setMnemonic('d');
+        deleteMenuItem.setText("Delete");
+        editMenu.add(deleteMenuItem);
+
+        menuBar.add(editMenu);
+
+        helpMenu.setMnemonic('h');
+        helpMenu.setText("Help");
+
+        contentMenuItem.setMnemonic('c');
+        contentMenuItem.setText("Contents");
+        helpMenu.add(contentMenuItem);
+
+        aboutMenuItem.setMnemonic('a');
+        aboutMenuItem.setText("About");
+        helpMenu.add(aboutMenuItem);
+
+        menuBar.add(helpMenu);
+
+        setJMenuBar(menuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(desktopPane, javax.swing.GroupLayout.PREFERRED_SIZE, 667, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(desktopPane, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jbuSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbuSalvarActionPerformed
-      controladorTelaCadastroCliente = new ControladorTelaCadastroCliente(jtfNome, jtfCPF, jtfRG, jtfSexo, jtfEmail);
-      controladorTelaCadastroCliente.salvarCliente();
-    }//GEN-LAST:event_jbuSalvarActionPerformed
-
-    private void jbuCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbuCancelarActionPerformed
-        System.exit(EXIT_ON_CLOSE);
-    }//GEN-LAST:event_jbuCancelarActionPerformed
+    private void exitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItemActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_exitMenuItemActionPerformed
 
     /**
      * @param args the command line arguments
@@ -237,21 +166,21 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JButton jbuCancelar;
-    private javax.swing.JButton jbuSalvar;
-    private javax.swing.JLabel jlaCPF;
-    private javax.swing.JLabel jlaEmail;
-    private javax.swing.JLabel jlaNome;
-    private javax.swing.JLabel jlaRG;
-    private javax.swing.JLabel jlaSexo;
-    private javax.swing.JTextField jtfCPF;
-    private javax.swing.JTextField jtfEmail;
-    private javax.swing.JTextField jtfNome;
-    private javax.swing.JTextField jtfRG;
-    private javax.swing.JTextField jtfSexo;
+    private javax.swing.JMenuItem aboutMenuItem;
+    private javax.swing.JMenuItem contentMenuItem;
+    private javax.swing.JMenuItem copyMenuItem;
+    private javax.swing.JMenuItem cutMenuItem;
+    private javax.swing.JMenuItem deleteMenuItem;
+    private javax.swing.JDesktopPane desktopPane;
+    private javax.swing.JMenu editMenu;
+    private javax.swing.JMenuItem exitMenuItem;
+    private javax.swing.JMenu fileMenu;
+    private javax.swing.JMenu helpMenu;
+    private javax.swing.JMenuBar menuBar;
+    private javax.swing.JMenuItem openMenuItem;
+    private javax.swing.JMenuItem pasteMenuItem;
+    private javax.swing.JMenuItem saveAsMenuItem;
+    private javax.swing.JMenuItem saveMenuItem;
     // End of variables declaration//GEN-END:variables
-   private ControladorTelaCadastroCliente controladorTelaCadastroCliente;
+
 }

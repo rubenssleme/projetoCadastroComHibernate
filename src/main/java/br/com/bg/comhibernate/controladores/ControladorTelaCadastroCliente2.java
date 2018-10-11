@@ -13,7 +13,7 @@ import javax.swing.JTextField;
  *
  * @author ruben
  */
-public class ControladorTelaCadastroCliente {
+public class ControladorTelaCadastroCliente2 {
     
     private JTextField jtfNome;
     private JTextField jtfCPF;
@@ -22,7 +22,7 @@ public class ControladorTelaCadastroCliente {
     private JTextField jtfEmail;
     Cliente cliente ;
 
-    public ControladorTelaCadastroCliente(JTextField jtfNome, JTextField jtfCPF, JTextField jtfRG,
+    public ControladorTelaCadastroCliente2(JTextField jtfNome, JTextField jtfCPF, JTextField jtfRG,
             JTextField jtfSexo, JTextField jtfEmail) {
         this.jtfNome = jtfNome;
         this.jtfCPF = jtfCPF;
