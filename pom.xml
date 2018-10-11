@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.bg</groupId>
     <artifactId>comHibernate</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
     <url>http://maven.apache.org</url>
    
@@ -91,5 +91,10 @@
     </dependencies>
     <!-- Nome e Descrição do projeto-->  
     <name>gerenciador financeiro com hibernate</name>
-    <description>Projeto educacional usado na etec professor basilides de godoy.</description>
+    <description>Projeto educacional usado na etec professor basilides de godoy para o ano de 2018
+tanto no 1º Semestre como no 2º Semestre.
+
+É ainda um projeto inicial mas em breve se tornará um grande projeto.
+
+Huuuuuunnnnn!!! </description>
 </project>
