@@ -11,12 +11,12 @@ import br.com.bg.comhibernate.controladores.ControladorTela;
  *
  * @author laramara
  */
-public class TelaCadastroClienteInternal extends javax.swing.JInternalFrame {
+public class TelaCadastroUsuario extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form TelaCadastroClienteInternal
      */
-    public TelaCadastroClienteInternal() {
+    public TelaCadastroUsuario() {
         initComponents();
       //  controladorTelaCadastroCliente = new ControladorTela(this, jdp);
         

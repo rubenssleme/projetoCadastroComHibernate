@@ -442,3 +442,171 @@
 2018-10-08 20:56:49 INFO  SchemaValidator:165 - HHH000102: Fetching database metadata
 2018-10-08 20:56:49 INFO  TableMetadata:65 - HHH000261: Table found: public.cliente
 2018-10-08 20:56:49 INFO  TableMetadata:66 - HHH000037: Columns: [rg, cpf, nome, id, sexo, email]
+2018-10-11 19:39:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-10-11 19:39:01 INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2018-10-11 19:39:01 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-10-11 19:39:01 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-10-11 19:39:01 INFO  Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-10-11 19:39:01 INFO  Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-10-11 19:39:01 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-10-11 19:39:01 INFO  Configuration:2216 - HHH000041: Configured SessionFactory: null
+2018-10-11 19:39:01 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2018-10-11 19:39:01 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/bdBgHibernate]
+2018-10-11 19:39:01 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=postgres, password=****}
+2018-10-11 19:39:01 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2018-10-11 19:39:01 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2018-10-11 19:39:02 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-10-11 19:39:02 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-10-11 19:39:02 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-10-11 19:39:02 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-10-11 19:39:03 INFO  SchemaValidator:157 - HHH000229: Running schema validator
+2018-10-11 19:39:03 INFO  SchemaValidator:165 - HHH000102: Fetching database metadata
+2018-10-11 19:39:03 INFO  TableMetadata:65 - HHH000261: Table found: public.cliente
+2018-10-11 19:39:03 INFO  TableMetadata:66 - HHH000037: Columns: [rg, cpf, nome, id, sexo, email]
+2018-10-11 19:48:21 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-10-11 19:48:21 INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2018-10-11 19:48:21 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-10-11 19:48:21 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-10-11 19:48:21 INFO  Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-10-11 19:48:21 INFO  Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-10-11 19:48:21 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-10-11 19:48:21 INFO  Configuration:2216 - HHH000041: Configured SessionFactory: null
+2018-10-11 19:48:21 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2018-10-11 19:48:21 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/bdBgHibernate]
+2018-10-11 19:48:21 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=postgres, password=****}
+2018-10-11 19:48:21 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2018-10-11 19:48:21 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2018-10-11 19:48:22 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-10-11 19:48:22 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-10-11 19:48:22 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-10-11 19:48:22 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-10-11 19:48:22 INFO  SchemaValidator:157 - HHH000229: Running schema validator
+2018-10-11 19:48:22 INFO  SchemaValidator:165 - HHH000102: Fetching database metadata
+2018-10-11 19:48:23 INFO  TableMetadata:65 - HHH000261: Table found: public.cliente
+2018-10-11 19:48:23 INFO  TableMetadata:66 - HHH000037: Columns: [rg, cpf, nome, id, sexo, email]
+2018-10-11 19:51:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-10-11 19:51:26 INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2018-10-11 19:51:26 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-10-11 19:51:26 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-10-11 19:51:26 INFO  Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-10-11 19:51:26 INFO  Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-10-11 19:51:26 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-10-11 19:51:26 INFO  Configuration:2216 - HHH000041: Configured SessionFactory: null
+2018-10-11 19:51:26 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2018-10-11 19:51:26 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/bdBgHibernate]
+2018-10-11 19:51:26 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=postgres, password=****}
+2018-10-11 19:51:26 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2018-10-11 19:51:26 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2018-10-11 19:51:26 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-10-11 19:51:26 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-10-11 19:51:26 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-10-11 19:51:26 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-10-11 19:51:27 INFO  SchemaValidator:157 - HHH000229: Running schema validator
+2018-10-11 19:51:27 INFO  SchemaValidator:165 - HHH000102: Fetching database metadata
+2018-10-11 19:51:27 INFO  TableMetadata:65 - HHH000261: Table found: public.cliente
+2018-10-11 19:51:27 INFO  TableMetadata:66 - HHH000037: Columns: [rg, cpf, nome, id, sexo, email]
+2018-10-11 19:54:28 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-10-11 19:54:28 INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2018-10-11 19:54:28 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-10-11 19:54:28 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-10-11 19:54:28 INFO  Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-10-11 19:54:28 INFO  Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-10-11 19:54:28 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-10-11 19:54:28 INFO  Configuration:2216 - HHH000041: Configured SessionFactory: null
+2018-10-11 19:54:28 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2018-10-11 19:54:28 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/bdBgHibernate]
+2018-10-11 19:54:28 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=postgres, password=****}
+2018-10-11 19:54:28 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2018-10-11 19:54:28 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2018-10-11 19:54:28 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-10-11 19:54:28 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-10-11 19:54:29 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-10-11 19:54:29 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-10-11 19:54:29 INFO  SchemaValidator:157 - HHH000229: Running schema validator
+2018-10-11 19:54:29 INFO  SchemaValidator:165 - HHH000102: Fetching database metadata
+2018-10-11 19:54:29 INFO  TableMetadata:65 - HHH000261: Table found: public.cliente
+2018-10-11 19:54:29 INFO  TableMetadata:66 - HHH000037: Columns: [rg, cpf, nome, id, sexo, email]
+2018-10-11 19:55:43 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-10-11 19:55:43 INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2018-10-11 19:55:43 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-10-11 19:55:43 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-10-11 19:55:43 INFO  Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-10-11 19:55:43 INFO  Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-10-11 19:55:43 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-10-11 19:55:43 INFO  Configuration:2216 - HHH000041: Configured SessionFactory: null
+2018-10-11 19:55:43 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2018-10-11 19:55:43 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/bdBgHibernate]
+2018-10-11 19:55:43 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=postgres, password=****}
+2018-10-11 19:55:43 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2018-10-11 19:55:43 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2018-10-11 19:55:44 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-10-11 19:55:44 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-10-11 19:55:44 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-10-11 19:55:44 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-10-11 19:55:44 INFO  SchemaValidator:157 - HHH000229: Running schema validator
+2018-10-11 19:55:44 INFO  SchemaValidator:165 - HHH000102: Fetching database metadata
+2018-10-11 19:55:44 INFO  TableMetadata:65 - HHH000261: Table found: public.cliente
+2018-10-11 19:55:44 INFO  TableMetadata:66 - HHH000037: Columns: [rg, cpf, nome, id, sexo, email]
+2018-10-11 20:05:20 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-10-11 20:05:20 INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2018-10-11 20:05:20 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-10-11 20:05:20 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-10-11 20:05:20 INFO  Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-10-11 20:05:20 INFO  Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-10-11 20:05:20 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-10-11 20:05:21 INFO  Configuration:2216 - HHH000041: Configured SessionFactory: null
+2018-10-11 20:05:21 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2018-10-11 20:05:21 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/bdBgHibernate]
+2018-10-11 20:05:21 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=postgres, password=****}
+2018-10-11 20:05:21 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2018-10-11 20:05:21 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2018-10-11 20:05:21 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-10-11 20:05:21 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-10-11 20:05:21 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-10-11 20:05:21 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-10-11 20:05:21 INFO  SchemaValidator:157 - HHH000229: Running schema validator
+2018-10-11 20:05:21 INFO  SchemaValidator:165 - HHH000102: Fetching database metadata
+2018-10-11 20:05:22 INFO  TableMetadata:65 - HHH000261: Table found: public.cliente
+2018-10-11 20:05:22 INFO  TableMetadata:66 - HHH000037: Columns: [rg, cpf, nome, id, sexo, email]
+2018-10-11 20:06:23 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-10-11 20:06:23 INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2018-10-11 20:06:23 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-10-11 20:06:23 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-10-11 20:06:23 INFO  Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-10-11 20:06:23 INFO  Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-10-11 20:06:23 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-10-11 20:06:23 INFO  Configuration:2216 - HHH000041: Configured SessionFactory: null
+2018-10-11 20:06:23 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2018-10-11 20:06:23 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/bdBgHibernate]
+2018-10-11 20:06:23 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=postgres, password=****}
+2018-10-11 20:06:23 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2018-10-11 20:06:23 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2018-10-11 20:06:24 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-10-11 20:06:24 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-10-11 20:06:24 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-10-11 20:06:24 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-10-11 20:06:24 INFO  SchemaValidator:157 - HHH000229: Running schema validator
+2018-10-11 20:06:24 INFO  SchemaValidator:165 - HHH000102: Fetching database metadata
+2018-10-11 20:06:24 INFO  TableMetadata:65 - HHH000261: Table found: public.cliente
+2018-10-11 20:06:24 INFO  TableMetadata:66 - HHH000037: Columns: [rg, cpf, nome, id, sexo, email]
+2018-10-11 21:14:19 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-10-11 21:14:19 INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2018-10-11 21:14:19 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-10-11 21:14:19 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-10-11 21:14:19 INFO  Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-10-11 21:14:19 INFO  Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-10-11 21:14:20 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-10-11 21:14:20 INFO  Configuration:2216 - HHH000041: Configured SessionFactory: null
+2018-10-11 21:14:20 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2018-10-11 21:14:20 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/bdBgHibernate]
+2018-10-11 21:14:20 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=postgres, password=****}
+2018-10-11 21:14:20 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2018-10-11 21:14:20 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2018-10-11 21:14:20 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-10-11 21:14:20 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-10-11 21:14:20 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-10-11 21:14:20 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-10-11 21:14:21 INFO  SchemaValidator:157 - HHH000229: Running schema validator
+2018-10-11 21:14:21 INFO  SchemaValidator:165 - HHH000102: Fetching database metadata
+2018-10-11 21:14:21 INFO  TableMetadata:65 - HHH000261: Table found: public.cliente
+2018-10-11 21:14:21 INFO  TableMetadata:66 - HHH000037: Columns: [rg, cpf, nome, id, sexo, email]

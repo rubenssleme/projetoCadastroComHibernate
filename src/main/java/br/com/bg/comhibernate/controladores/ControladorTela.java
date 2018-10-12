@@ -2,7 +2,7 @@
 package br.com.bg.comhibernate.controladores;
 
 
-import br.com.bg.comhibernate.telas.TelaCadastroClienteInternal;
+import br.com.bg.comhibernate.telas.TelaCadastroUsuario;
 import java.beans.PropertyVetoException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -20,7 +20,7 @@ public abstract class ControladorTela {
     private String mensagem;
     private JFrame telaPrincipal;
     private JDesktopPane jdpTelaCadastroCliente;
-    private TelaCadastroClienteInternal telaCadastroCliente;
+    private TelaCadastroUsuario telaCadastroCliente;
 
     //Construtor 
     public ControladorTela(JFrame telaPrincipal, JDesktopPane jdpTelaCadastroCliente) {
@@ -31,7 +31,7 @@ public abstract class ControladorTela {
     
     public void exibirTelaCadastroCliente(){
         if(telaCadastroCliente == null){
-            telaCadastroCliente = new TelaCadastroClienteInternal();//Criar nova instancia da tela.
+            telaCadastroCliente = new TelaCadastroUsuario();//Criar nova instancia da tela.
             jdpTelaCadastroCliente.add(telaCadastroCliente);//Adicionar no JDesktopPane.   
         }
         telaCadastroCliente.setVisible(true);
