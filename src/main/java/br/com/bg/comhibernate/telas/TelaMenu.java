@@ -13,7 +13,7 @@ public class TelaMenu extends javax.swing.JFrame {
      */
     public TelaMenu() {
         initComponents();
-        controlador = new ControladorTelaMenu(this, jdpTelaFilha,jlaHora, jlaData, jlaDiaSemana);
+        controlador = new ControladorTelaMenu(this, jdpTelaFilha, jlaHora, jlaData, jlaDiaSemana);
         setExtendedState(MAXIMIZED_BOTH);
     }
 
@@ -200,7 +200,6 @@ public class TelaMenu extends javax.swing.JFrame {
     private void jmiCadastroClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiCadastroClienteActionPerformed
         controlador.exibirTelaCadastroCliente();
     }//GEN-LAST:event_jmiCadastroClienteActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
