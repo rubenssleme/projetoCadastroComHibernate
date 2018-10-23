@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.bg.comhibernate.telas;
 
 import br.com.bg.comhibernate.controladores.ControladorTela;
 
 /**
  *
- * @author laramara
+ * @author rubens leme
  */
 public class TelaCadastroUsuario extends javax.swing.JInternalFrame {
 
@@ -18,8 +13,8 @@ public class TelaCadastroUsuario extends javax.swing.JInternalFrame {
      */
     public TelaCadastroUsuario() {
         initComponents();
-      //  controladorTelaCadastroCliente = new ControladorTela(this, jdp);
-        
+        //  controladorTelaCadastroCliente = new ControladorTela(this, jdp);
+
     }
 
     /**
@@ -47,7 +42,6 @@ public class TelaCadastroUsuario extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables

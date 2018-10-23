@@ -14,14 +14,14 @@ import javax.swing.Timer;
  *
  * @author Rubens Leme
  */
-public class ControladorTelaMenu extends ControladorTela{
+public class ControladorTelaMenu extends ControladorTela {
 
     private JLabel jlaHora;
     private JLabel jlaData;
     private JLabel jlaDiaSemana;
     private Timer timer;
 
-    public ControladorTelaMenu(JFrame telaMenu,JDesktopPane desktop,JLabel jlaHora,JLabel jlaData, JLabel jlaDiaSemana) {
+    public ControladorTelaMenu(JFrame telaMenu, JDesktopPane desktop, JLabel jlaHora, JLabel jlaData, JLabel jlaDiaSemana) {
         super(telaMenu, desktop);
         this.jlaHora = jlaHora;
         this.jlaData = jlaData;
@@ -48,6 +48,7 @@ public class ControladorTelaMenu extends ControladorTela{
             @Override
             public void actionPerformed(ActionEvent e) {
                 atualizarHora();
+
             }
         });
         timer.start();
