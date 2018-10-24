@@ -1,6 +1,7 @@
 package br.com.bg.comhibernate.controladores;
 
 import br.com.bg.comhibernate.dominio.Usuario;
+import br.com.bg.comhibernate.utilitarios.Mensagem;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
@@ -18,6 +19,9 @@ public class ControladorTelaCadastroUsuario {
     private JTextField jtfSexo;
 
     Usuario usuario;
+
+    public ControladorTelaCadastroUsuario() {
+    }
 
     public ControladorTelaCadastroUsuario(JTextField jtfNome, JTextField jtfCPF, JTextField jtfRG,
             JTextField jtfSexo, JTextField jtfEmail) {
@@ -45,6 +49,16 @@ public class ControladorTelaCadastroUsuario {
         JOptionPane.showMessageDialog(null,
                 "Usuario - " + usuario.toString());
 
+    }
+
+    public void fecharTela() {
+        int opcao = JOptionPane.showConfirmDialog(null,
+                "Tem certeza que deseja sair?", "Atenção", JOptionPane.YES_NO_OPTION);
+        if (opcao == JOptionPane.YES_OPTION) {
+            Mensagem.exibirMensagem("valor ---> " + opcao);
+        } else {
+            Mensagem.exibirMensagem("valor nao ---> " + opcao);
+        }
     }
 
 }
