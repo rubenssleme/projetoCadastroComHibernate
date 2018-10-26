@@ -4,7 +4,7 @@ import br.com.bg.comhibernate.controladores.ControladorTelaMenu;
 
 /**
  *
- * @author Rubens Leme
+ * @author Rubens Leme oi
  */
 public class TelaMenu extends javax.swing.JFrame {
 
