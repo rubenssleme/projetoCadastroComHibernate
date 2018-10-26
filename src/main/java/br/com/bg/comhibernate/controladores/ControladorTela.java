@@ -1,6 +1,4 @@
-
 package br.com.bg.comhibernate.controladores;
-
 
 import br.com.bg.comhibernate.telas.TelaCadastroUsuario;
 import java.beans.PropertyVetoException;
@@ -16,37 +14,37 @@ import javax.swing.JOptionPane;
  * @author Rubens Leme
  */
 public abstract class ControladorTela {
+
     //Atributos
     private String mensagem;
-    private JFrame telaPrincipal;
-    private JDesktopPane jdpTelaCadastroCliente;
-    private TelaCadastroUsuario telaCadastroCliente;
+    private final JFrame telaPrincipal;
+    private final JDesktopPane jdpTelaCadastroUsuario;
+    private TelaCadastroUsuario telaCadastroUsuario;
 
     //Construtor 
-    public ControladorTela(JFrame telaPrincipal, JDesktopPane jdpTelaCadastroCliente) {
+    public ControladorTela(JFrame telaPrincipal, JDesktopPane jdpTelaCadastroUsuario) {
         this.telaPrincipal = telaPrincipal;
-        this.jdpTelaCadastroCliente = jdpTelaCadastroCliente;
+        this.jdpTelaCadastroUsuario = jdpTelaCadastroUsuario;
     }
-    
-    
-    public void exibirTelaCadastroCliente(){
-        if(telaCadastroCliente == null){
-            telaCadastroCliente = new TelaCadastroUsuario();//Criar nova instancia da tela.
-            jdpTelaCadastroCliente.add(telaCadastroCliente);//Adicionar no JDesktopPane.   
+
+    public void exibirTelaCadastroCliente() {
+        if (telaCadastroUsuario == null) {
+            telaCadastroUsuario = new TelaCadastroUsuario();//Criar nova instancia da tela.
+            jdpTelaCadastroUsuario.add(telaCadastroUsuario);//Adicionar no JDesktopPane.   
         }
-        telaCadastroCliente.setVisible(true);
-        moverTelaParaFrenteOuParaTras(telaCadastroCliente);
+        telaCadastroUsuario.setVisible(true);
+        moverTelaParaFrenteOuParaTras(telaCadastroUsuario);
     }
 
     private void moverTelaParaFrenteOuParaTras(JInternalFrame tela) {
-       if( tela!= null){
-           tela.moveToFront();
-       }else {
-           tela.moveToBack();
-       }
-       tela.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-        tela.setSize(jdpTelaCadastroCliente.getSize());
-        jdpTelaCadastroCliente.getDesktopManager().activateFrame(tela);
+        if (tela != null) {
+            tela.moveToFront();
+        } else {
+            tela.moveToBack();
+        }
+        tela.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        tela.setSize(jdpTelaCadastroUsuario.getSize());
+        jdpTelaCadastroUsuario.getDesktopManager().activateFrame(tela);
         try {
             tela.setSelected(true);
             tela.setMaximum(true);
@@ -54,12 +52,13 @@ public abstract class ControladorTela {
             Logger.getLogger(ControladorTela.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-     private void fechar() {
+
+    private void fechar() {
         int sair = JOptionPane.showConfirmDialog(null,
                 "Tem certeza que deseja sair?", "Atenção", JOptionPane.YES_NO_OPTION);
         if (sair == JOptionPane.YES_OPTION) {
             System.exit(0);
         }
     }
-    
+
 }

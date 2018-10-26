@@ -1,6 +1,6 @@
 package br.com.bg.comhibernate.telas;
 
-import br.com.bg.comhibernate.controladores.ControladorTelaCadastroCliente2;
+import br.com.bg.comhibernate.controladores.ControladorTelaCadastroUsuario;
 
 /**
  *
@@ -188,7 +188,7 @@ public class TelaCadastroCliente2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbuSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbuSalvarActionPerformed
-      controladorTelaCadastroCliente = new ControladorTelaCadastroCliente2(jtfNome, jtfCPF, jtfRG, jtfSexo, jtfEmail);
+      controladorTelaCadastroCliente = new ControladorTelaCadastroUsuario(jtfNome, jtfCPF, jtfRG, jtfSexo, jtfEmail);
       controladorTelaCadastroCliente.salvarCliente();
     }//GEN-LAST:event_jbuSalvarActionPerformed
 
@@ -215,5 +215,5 @@ public class TelaCadastroCliente2 extends javax.swing.JFrame {
     private javax.swing.JTextField jtfRG;
     private javax.swing.JTextField jtfSexo;
     // End of variables declaration//GEN-END:variables
-   private ControladorTelaCadastroCliente2 controladorTelaCadastroCliente;
+   private ControladorTelaCadastroUsuario controladorTelaCadastroCliente;
 }
