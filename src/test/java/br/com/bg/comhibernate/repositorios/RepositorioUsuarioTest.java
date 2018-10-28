@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.bg.comhibernate.repositorios;
 
 import br.com.bg.comhibernate.dominio.Cliente;
@@ -12,9 +7,9 @@ import org.junit.Test;
  *
  * @author laramara
  */
-public class RepositorioClienteTest {
+public class RepositorioUsuarioTest {
     
-    public RepositorioClienteTest() {
+    public RepositorioUsuarioTest() {
     }
 
     @Test
@@ -26,8 +21,8 @@ public class RepositorioClienteTest {
         cliente.setRG("25420888558");
         cliente.setSexo("M");
         cliente.seteMail("Rubens@");
-        RepositorioCliente repositorioCliente = new RepositorioCliente();
-        repositorioCliente.salvar(cliente);
+        RepositorioUsuario repositorioCliente = new RepositorioUsuario();
+       // repositorioCliente.salvar(cliente);
     }
     
 }
