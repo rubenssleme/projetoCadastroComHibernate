@@ -1,4 +1,3 @@
-
 package br.com.bg.comhibernate.controladores;
 
 
@@ -27,8 +26,7 @@ public abstract class ControladorTela {
         this.telaPrincipal = telaPrincipal;
         this.jdpTelaCadastroCliente = jdpTelaCadastroCliente;
     }
-    
-    
+       
     public void exibirTelaCadastroCliente(){
         if(telaCadastroCliente == null){
             telaCadastroCliente = new TelaCadastroUsuario();//Criar nova instancia da tela.
@@ -37,7 +35,6 @@ public abstract class ControladorTela {
         telaCadastroCliente.setVisible(true);
         moverTelaParaFrenteOuParaTras(telaCadastroCliente);
     }
-
     private void moverTelaParaFrenteOuParaTras(JInternalFrame tela) {
        if( tela!= null){
            tela.moveToFront();

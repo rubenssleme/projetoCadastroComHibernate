@@ -8,16 +8,12 @@ import br.com.bg.comhibernate.controladores.ControladorTelaMenu;
  */
 public class TelaMenu extends javax.swing.JFrame {
 
-    /**
-     * Creates new form TelaPrincipal
-     */
     public TelaMenu() {
         initComponents();
         controlador = new ControladorTelaMenu(this, jdpTelaFilha, jlaHora, jlaData, jlaDiaSemana);
         setExtendedState(MAXIMIZED_BOTH);
     }
-
-    @SuppressWarnings("unchecked")
+ @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
