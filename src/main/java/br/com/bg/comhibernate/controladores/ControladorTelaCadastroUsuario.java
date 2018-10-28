@@ -1,6 +1,7 @@
 package br.com.bg.comhibernate.controladores;
 
 import br.com.bg.comhibernate.dominio.Usuario;
+import br.com.bg.comhibernate.repositorios.RepositorioUsuario;
 import br.com.bg.comhibernate.utilitarios.Mensagem;
 import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
@@ -20,6 +21,7 @@ public class ControladorTelaCadastroUsuario {
     private JComboBox jcbSexo;
 
     Usuario usuario;
+    RepositorioUsuario repositoUsuario = new RepositorioUsuario();
 
     public ControladorTelaCadastroUsuario() {
     }
@@ -49,8 +51,9 @@ public class ControladorTelaCadastroUsuario {
 
     public void salvarUsuario() {
         preencherUsuario();
-        JOptionPane.showMessageDialog(null,
-                "Usuario - " + usuario.toString());
+        repositoUsuario.inserirUsuario(usuario);
+        /*JOptionPane.showMessageDialog(null,
+                "Usuario - " + usuario.toString());*/
 
     }
 
