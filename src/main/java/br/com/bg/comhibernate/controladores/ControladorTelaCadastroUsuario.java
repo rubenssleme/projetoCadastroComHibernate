@@ -24,8 +24,8 @@ public class ControladorTelaCadastroUsuario {
     public ControladorTelaCadastroUsuario() {
     }
 
-    public ControladorTelaCadastroUsuario(JTextField jtfNome,JTextField jtfEmail, JTextField jtfCPF, JTextField jtfRG,JTextField jtfIdade,
-            JComboBox jcbSexo) {
+    public ControladorTelaCadastroUsuario(JTextField jtfNome,JTextField jtfEmail, JTextField jtfCPF, 
+            JTextField jtfRG,JTextField jtfIdade,JComboBox jcbSexo) {
         this.jtfNome = jtfNome;
         this.jtfEmail = jtfEmail;
         this.jtfCPF = jtfCPF;
