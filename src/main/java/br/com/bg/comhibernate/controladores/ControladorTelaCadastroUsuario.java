@@ -2,6 +2,7 @@ package br.com.bg.comhibernate.controladores;
 
 import br.com.bg.comhibernate.dominio.Usuario;
 import br.com.bg.comhibernate.utilitarios.Mensagem;
+import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
@@ -16,20 +17,22 @@ public class ControladorTelaCadastroUsuario {
     private JTextField jtfCPF;
     private JTextField jtfRG;
     private JTextField jtfIdade;
-    private JTextField jtfSexo;
+    private JComboBox jcbSexo;
 
     Usuario usuario;
 
     public ControladorTelaCadastroUsuario() {
     }
 
-    public ControladorTelaCadastroUsuario(JTextField jtfNome, JTextField jtfCPF, JTextField jtfRG,
-            JTextField jtfSexo, JTextField jtfEmail) {
+    public ControladorTelaCadastroUsuario(JTextField jtfNome,JTextField jtfEmail, JTextField jtfCPF, JTextField jtfRG,JTextField jtfIdade,
+            JComboBox jcbSexo) {
         this.jtfNome = jtfNome;
+        this.jtfEmail = jtfEmail;
         this.jtfCPF = jtfCPF;
         this.jtfRG = jtfRG;
-        this.jtfSexo = jtfSexo;
-        this.jtfEmail = jtfEmail;
+        this.jtfIdade =jtfIdade;
+        this.jcbSexo = jcbSexo;
+        
     }
 
     private void preencherUsuario() {
@@ -41,10 +44,10 @@ public class ControladorTelaCadastroUsuario {
         usuario.setCpf(jtfCPF.getText());
         usuario.setRg(jtfRG.getText());
         usuario.setIdade(Integer.parseInt(jtfIdade.getText()));
-        usuario.setSexo(jtfSexo.getText());
+        usuario.setSexo(jcbSexo.getSelectedItem().toString());
     }
 
-    public void salvarCliente() {
+    public void salvarUsuario() {
         preencherUsuario();
         JOptionPane.showMessageDialog(null,
                 "Usuario - " + usuario.toString());

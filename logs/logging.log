@@ -747,3 +747,24 @@
 2018-10-28 16:04:00 INFO  SchemaValidator:165 - HHH000102: Fetching database metadata
 2018-10-28 16:04:00 INFO  TableMetadata:65 - HHH000261: Table found: public.cliente
 2018-10-28 16:04:00 INFO  TableMetadata:66 - HHH000037: Columns: [rg, cpf, nome, id, sexo, email]
+2018-10-28 17:11:21 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-10-28 17:11:21 INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2018-10-28 17:11:21 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-10-28 17:11:21 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-10-28 17:11:21 INFO  Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2018-10-28 17:11:21 INFO  Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2018-10-28 17:11:22 WARN  DTDEntityResolver:75 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2018-10-28 17:11:22 INFO  Configuration:2216 - HHH000041: Configured SessionFactory: null
+2018-10-28 17:11:22 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2018-10-28 17:11:22 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/bdBgHibernate]
+2018-10-28 17:11:22 INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=postgres, password=****}
+2018-10-28 17:11:22 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2018-10-28 17:11:22 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2018-10-28 17:11:22 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-10-28 17:11:22 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-10-28 17:11:22 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-10-28 17:11:22 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-10-28 17:11:23 INFO  SchemaValidator:157 - HHH000229: Running schema validator
+2018-10-28 17:11:23 INFO  SchemaValidator:165 - HHH000102: Fetching database metadata
+2018-10-28 17:11:23 INFO  TableMetadata:65 - HHH000261: Table found: public.cliente
+2018-10-28 17:11:23 INFO  TableMetadata:66 - HHH000037: Columns: [rg, cpf, nome, id, sexo, email]
