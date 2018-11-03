@@ -39,8 +39,6 @@ public class ControladorTelaMenu extends ControladorTela {
         jlaData.setText(DateFormat.getDateInstance(DateFormat.MEDIUM).format(new Date()));
         // Dia da semana
         jlaDiaSemana.setText(new SimpleDateFormat("EEEE").format(new Date()));
-        // Hora
-        jlaHora.setText(new SimpleDateFormat("HH:mm:ss").format(new Date()));
     }
 
     private void atualizacaoTimer() {
@@ -48,12 +46,9 @@ public class ControladorTelaMenu extends ControladorTela {
             @Override
             public void actionPerformed(ActionEvent e) {
                 atualizarHora();
-
             }
         });
         timer.start();
-
         atualizarData();
     }
-
 }

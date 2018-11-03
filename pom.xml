@@ -90,7 +90,7 @@
         
     </dependencies>
     <!-- Nome e Descrição do projeto-->  
-    <name>gerenciador financeiro com hibernate</name>
+    <name>CRUD com hibernate</name>
     <description>Projeto educacional usado na etec professor basilides de godoy para o ano de 2018
 tanto no 1º Semestre como no 2º Semestre.
 

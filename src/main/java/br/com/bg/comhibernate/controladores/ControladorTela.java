@@ -18,23 +18,31 @@ public abstract class ControladorTela {
     //Atributos
     private String mensagem;
     private JFrame telaPrincipal;
-    private JDesktopPane jdpTelaCadastroUsuario;
+    private JDesktopPane jdpTelaFilha;
     private TelaCadastroUsuario telaCadastroUsuario;
 
     //Construtor 
-    public ControladorTela(JFrame telaPrincipal, JDesktopPane jdpTelaCadastroCliente) {
+    public ControladorTela(JFrame telaPrincipal, JDesktopPane jdpTelaFilha) {
         this.telaPrincipal = telaPrincipal;
-        this.jdpTelaCadastroUsuario = jdpTelaCadastroCliente;
+        this.jdpTelaFilha = jdpTelaFilha;
     }
-       
+    //Metodo de exibir tela no JDeskTop jdpTelaFilha   
     public void exibirTelaCadastroUsuario(){
         if(telaCadastroUsuario == null){
             telaCadastroUsuario = new TelaCadastroUsuario();//Criar nova instancia da tela.
-            jdpTelaCadastroUsuario.add(telaCadastroUsuario);//Adicionar no JDesktopPane.   
+            jdpTelaFilha.add(telaCadastroUsuario);//Adicionar no JDesktopPane.   
         }
         telaCadastroUsuario.setVisible(true);
         moverTelaParaFrenteOuParaTras(telaCadastroUsuario);
+    } 
+    
+    public void exibirTelaCadastroProduto() {
+       
+        
     }
+    
+    
+    
     private void moverTelaParaFrenteOuParaTras(JInternalFrame tela) {
        if( tela!= null){
            tela.moveToFront();
@@ -42,16 +50,18 @@ public abstract class ControladorTela {
            tela.moveToBack();
        }
        tela.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-        tela.setSize(jdpTelaCadastroUsuario.getSize());
-        jdpTelaCadastroUsuario.getDesktopManager().activateFrame(tela);
+        tela.setSize(jdpTelaFilha.getSize());
+        jdpTelaFilha.getDesktopManager().activateFrame(tela);
         try {
             tela.setSelected(true);
             tela.setMaximum(true);
         } catch (PropertyVetoException ex) {
-            Logger.getLogger(ControladorTela.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ControladorTela.class.getName())
+                    .log(Level.SEVERE, null, ex);
         }
     }
-     private void fechar() {
+    
+    private void fechar() {
         int sair = JOptionPane.showConfirmDialog(null,
                 "Tem certeza que deseja sair?", "Atenção", JOptionPane.YES_NO_OPTION);
         if (sair == JOptionPane.YES_OPTION) {

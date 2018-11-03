@@ -12,6 +12,7 @@ public class RepositorioUsuario extends RepositorioGenerico<Usuario>{
     public void inserirUsuario(Usuario usuario){
         
         Mensagem.exibirMensagem( "Agora foi - "  + usuario.toString());
+        
     }
     
     

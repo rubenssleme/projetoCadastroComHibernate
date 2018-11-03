@@ -27,15 +27,62 @@ public class TelaCadastroProduto extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jlaNome = new javax.swing.JLabel();
+        jlaCategoria = new javax.swing.JLabel();
+        jtfNome = new javax.swing.JTextField();
+        jcbCategoria = new javax.swing.JComboBox<>();
+        jbuSalvar = new javax.swing.JButton();
+        jbuCancelar = new javax.swing.JButton();
+
+        jlaNome.setText("Nome:");
+
+        jlaCategoria.setText("Categoria");
+
+        jcbCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Achocolatado", "Enlatados", "Farinaceos", "Carnes", "Aves", "Peixes", " " }));
+
+        jbuSalvar.setText("Salvar");
+
+        jbuCancelar.setText("Cancelar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 394, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jlaCategoria)
+                        .addGap(18, 18, 18)
+                        .addComponent(jcbCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jlaNome)
+                        .addGap(18, 18, 18)
+                        .addComponent(jtfNome, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(jbuSalvar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 133, Short.MAX_VALUE)
+                .addComponent(jbuCancelar)
+                .addGap(77, 77, 77))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 274, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jlaNome)
+                    .addComponent(jtfNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jlaCategoria)
+                    .addComponent(jcbCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 152, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jbuSalvar)
+                    .addComponent(jbuCancelar))
+                .addGap(25, 25, 25))
         );
 
         pack();
@@ -43,5 +90,11 @@ public class TelaCadastroProduto extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jbuCancelar;
+    private javax.swing.JButton jbuSalvar;
+    private javax.swing.JComboBox<String> jcbCategoria;
+    private javax.swing.JLabel jlaCategoria;
+    private javax.swing.JLabel jlaNome;
+    private javax.swing.JTextField jtfNome;
     // End of variables declaration//GEN-END:variables
 }

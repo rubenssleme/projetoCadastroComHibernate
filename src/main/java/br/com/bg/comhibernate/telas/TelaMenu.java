@@ -4,7 +4,7 @@ import br.com.bg.comhibernate.controladores.ControladorTelaMenu;
 
 /**
  *
- * @author Rubens Leme oi
+ * @author Rubens Leme
  */
 public class TelaMenu extends javax.swing.JFrame {
 
@@ -12,6 +12,7 @@ public class TelaMenu extends javax.swing.JFrame {
         initComponents();
         controladorTelaMenu = new ControladorTelaMenu(this, jdpTelaFilha, jlaHora, jlaData, jlaDiaSemana);
         setExtendedState(MAXIMIZED_BOTH);
+        
     }
  @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -26,12 +27,13 @@ public class TelaMenu extends javax.swing.JFrame {
         jlaHora = new javax.swing.JLabel();
         jlaDiaSemana = new javax.swing.JLabel();
         jlaData = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        jpaTelaFilha = new javax.swing.JPanel();
         jdpTelaFilha = new javax.swing.JDesktopPane();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        jmbBarra = new javax.swing.JMenuBar();
+        jmeCadastro = new javax.swing.JMenu();
         jmiCadastroCliente = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        jmiCadastroProduto = new javax.swing.JMenuItem();
+        jmeConsulta = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tela de Menu");
@@ -151,18 +153,18 @@ public class TelaMenu extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jpaTelaFilhaLayout = new javax.swing.GroupLayout(jpaTelaFilha);
+        jpaTelaFilha.setLayout(jpaTelaFilhaLayout);
+        jpaTelaFilhaLayout.setHorizontalGroup(
+            jpaTelaFilhaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jdpTelaFilha, javax.swing.GroupLayout.Alignment.TRAILING)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jpaTelaFilhaLayout.setVerticalGroup(
+            jpaTelaFilhaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jdpTelaFilha)
         );
 
-        jMenu1.setText("Cadastro");
+        jmeCadastro.setText("Cadastro");
 
         jmiCadastroCliente.setText("Cadastro Usuario");
         jmiCadastroCliente.addActionListener(new java.awt.event.ActionListener() {
@@ -170,14 +172,22 @@ public class TelaMenu extends javax.swing.JFrame {
                 jmiCadastroClienteActionPerformed(evt);
             }
         });
-        jMenu1.add(jmiCadastroCliente);
+        jmeCadastro.add(jmiCadastroCliente);
 
-        jMenuBar1.add(jMenu1);
+        jmiCadastroProduto.setText("Cadastro Produto");
+        jmiCadastroProduto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmiCadastroProdutoActionPerformed(evt);
+            }
+        });
+        jmeCadastro.add(jmiCadastroProduto);
 
-        jMenu2.setText("Consulta");
-        jMenuBar1.add(jMenu2);
+        jmbBarra.add(jmeCadastro);
 
-        setJMenuBar(jMenuBar1);
+        jmeConsulta.setText("Consulta");
+        jmbBarra.add(jmeConsulta);
+
+        setJMenuBar(jmbBarra);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -187,7 +197,7 @@ public class TelaMenu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jpaBarraInformacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jpaTelaFilha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -199,7 +209,7 @@ public class TelaMenu extends javax.swing.JFrame {
                         .addComponent(jpaBarraInformacao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(28, 28, 28)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jpaTelaFilha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -210,22 +220,27 @@ public class TelaMenu extends javax.swing.JFrame {
         controladorTelaMenu.exibirTelaCadastroUsuario();
     }//GEN-LAST:event_jmiCadastroClienteActionPerformed
 
+    private void jmiCadastroProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiCadastroProdutoActionPerformed
+        
+    }//GEN-LAST:event_jmiCadastroProdutoActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JDesktopPane jdpTelaFilha;
     private javax.swing.JLabel jlaData;
     private javax.swing.JLabel jlaDiaSemana;
     private javax.swing.JLabel jlaHora;
     private javax.swing.JLabel jlaUsuarioLogado;
+    private javax.swing.JMenuBar jmbBarra;
+    private javax.swing.JMenu jmeCadastro;
+    private javax.swing.JMenu jmeConsulta;
     private javax.swing.JMenuItem jmiCadastroCliente;
+    private javax.swing.JMenuItem jmiCadastroProduto;
     private javax.swing.JPanel jpaBarraInformacao;
     private javax.swing.JPanel jpaInfoDataHora;
     private javax.swing.JPanel jpaLogoEmpresa;
+    private javax.swing.JPanel jpaTelaFilha;
     private javax.swing.JPanel jpaUsuarioLogado;
     // End of variables declaration//GEN-END:variables
-    private ControladorTelaMenu controladorTelaMenu;
+    ControladorTelaMenu controladorTelaMenu;
 }
