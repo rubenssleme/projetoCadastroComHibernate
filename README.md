@@ -3,8 +3,14 @@ Projeto Educacional  criando  um CRUD, Cadastro e Consulta orientado a objeto co
 
 **Usando 
 
+<<<<<<< .mine
 | name1 | name2 | name3 |
 | ----- | ----- | ----- |
 | valu1 | valu2 | valu3 |
+=======
+|name1|name2|name3|
+|-----|-----|-----|
+|valu1|valu2|valu3|
+>>>>>>> .theirs
 
 [name](http://uol.com.br)
