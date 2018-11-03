@@ -64,6 +64,7 @@ public class ControladorTelaCadastroUsuario {
             Mensagem.exibirMensagem("valor ---> " + opcao);
         } else {
             Mensagem.exibirMensagem("valor nao ---> " + opcao);
+            
         }
     }
 
