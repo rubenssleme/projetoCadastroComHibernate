@@ -1,6 +1,6 @@
 package br.com.bg.comhibernate.controladores;
 
-
+import br.com.bg.comhibernate.telas.TelaCadastroProduto;
 import br.com.bg.comhibernate.telas.TelaCadastroUsuario;
 import java.beans.PropertyVetoException;
 import java.util.logging.Level;
@@ -20,6 +20,7 @@ public abstract class ControladorTela {
     private JFrame telaPrincipal;
     private JDesktopPane jdpTelaFilha;
     private TelaCadastroUsuario telaCadastroUsuario;
+    private TelaCadastroProduto telaCadastroProduto;
 
     //Construtor 
     public ControladorTela(JFrame telaPrincipal, JDesktopPane jdpTelaFilha) {
@@ -37,8 +38,12 @@ public abstract class ControladorTela {
     } 
     
     public void exibirTelaCadastroProduto() {
-       
-        
+       if(telaCadastroProduto == null){
+           telaCadastroProduto = new TelaCadastroProduto();
+           jdpTelaFilha.add(telaCadastroProduto);
+       }
+       telaCadastroProduto.setVisible(true);
+        //moverTelaParaFrenteOuParaTras(telaCadastroProduto);
     }
     
     

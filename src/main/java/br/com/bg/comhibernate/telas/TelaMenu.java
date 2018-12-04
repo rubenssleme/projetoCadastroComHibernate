@@ -221,7 +221,7 @@ public class TelaMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_jmiCadastroClienteActionPerformed
 
     private void jmiCadastroProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiCadastroProdutoActionPerformed
-        
+        controladorTelaMenu.exibirTelaCadastroProduto();
     }//GEN-LAST:event_jmiCadastroProdutoActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
